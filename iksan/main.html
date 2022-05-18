@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="slide.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>익산시교통정보센터</title>
+    <link rel="stylesheet" href="/iksan/css/main.css">
+    <link rel="stylesheet" href="/iksan/css/focus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div class="bottom">
+            <div class="bottom-menu">
+                <!-- 위치랑 전화번호 -->
+                <div class="company-information">
+                    <div class="company-information-list">
+                        <div class="company">전라북도 익산 무왕로2길 414</div>
+                        <div class="company">대표전화 (063)859-4541</div>
+                        <div class="company">Copyright(c) 2022 IKSANCITY All rights reserved</div>
+                    </div>
+                </div>
+                <!-- 모니터링단홈페이지 -->
+                <div class="mon_dec_box">
+                    <div class="monitoring">
+                        <div class="monitoring-1">
+                            <a href="/iksan/main.html" class="bottom-menu-1">모니터링단홈페이지</a>
+                        </div>
+                    </div>
+                    <!-- 교통불편민원신고 -->
+                    <div class="declaration">
+                        <a href="http://www.molit.go.kr/irocm/USR/WPGE0201/m_15604/DTL.jsp" target='_blank' class="bottom-menu-1">교통불편민원신고</a>
+                    </div>
+                </div>
+                <!-- 관련사이트 목록 -->
+                <div class="Related-sites">
+                    <select name="company-list" id="select" class="select" onchange="window.open(value,sel_val())" style="padding-right: 20px;">
+                        <option id="1" value="none" disabled selected>관련사이트</option>
+                        <option id="2" value="https://www.iksan.go.kr/index.iksan?menuCd=DOM_000002017000000000">익산시청
+                        </option>
+                        <option id="3" value="https://www.police.go.kr/index.do">경찰청</option>
+                        <option id="4" value="https://www.tago.go.kr/">TAGO</option>
+                        <option id="5" value="http://www.molit.go.kr/portal.do">국토교통부</option>
+                        <option id="6" value="https://www.koroad.or.kr/">도로교통공단</option>
+                        <option id="7" value="https://www.ex.co.kr/">한국도로공사</option>
+                        <option id="8" value="https://www.tbn.or.kr/">TBN전북교통방송</option>
+                        <option id="9" value="https://www.its.go.kr/">국가교통정보</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <img class="background-img" src="/iksan/pic/test.png">
+        <div class="body-a">
+            <!-- 홈페이지 로그 -->
+            <div class="iksan-img">
+                <a href="/iksan/main.html" class="dog">
+                    <div class="img-text-bundle">
+                        <img clsaa="iksan" src="pic/iksan.png" bordar="0" width="60" height="50" alt="" style="margin-top: 12px;">
+                        <div class="img-text-box">
+                            <p class="img-text">익산시교통정보센터</p>
+                            <p class="img-text-eh">IKSAN City Traffic Imformation Center</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- 언어 선택창 -->
+            <!-- 메뉴창 -->
+            <div class="menu">
+                <div class="menu-list">
+                    <!-- 소통정보창 -->
+                    <a href="/iksan/Communication.html" class="menu-link">
+                        <div class="img-1">
+                            <img class="Traffic_Light" src="pic/traffic-light-svgrepo-com.svg" style="width: 25px; height: 25px; margin-left: 25px;">
+                            <p class="menu-link-1">소통정보</p>
+                        </div>
+                        <div class="menu-box1">
+                            <div class="menu-box_2"></div>
+                        </div>
+                    </a>
+                    <!-- CCTV -->
+                    <a href="/iksan/CCTV.html" class="menu-link">
+                        <div class="img-1">
+                            <img class="Traffic_Light" src="pic/cctv-svgrepo-com.svg" style="width: 25px; height: 25px; margin-left: 25px;">
+                            <p class="menu-link-1">CCTV</p>
+                        </div>
+                        <div class="menu-box1">
+                            <div class="menu-box_2"></div>
+                        </div>
+                    </a>
+                    <!-- 주차장 정보 -->
+                    <a href="/iksan/parking.html" class="menu-link">
+                        <div class="img-1">
+                            <img class="Traffic_Light" src="pic/parking-svgrepo-com.svg" style="width: 25px; height: 25px; margin-left: 25px;">
+                            <p class="menu-link-1">주차장 정보</p>
+                        </div>
+                        <div class="menu-box1">
+                            <div class="menu-box_2"></div>
+                        </div>
+                    </a>
+                    <!-- 공지사항 -->
+                    <a href="/iksan/announcement-1.html" class="menu-link">
+                        <div class="img-1">
+                            <img class="Traffic_Light" src="pic/message-svgrepo-com.svg" style="width: 25px; height: 25px; margin-left: 25px;">
+                            <p class="menu-link-1">공지사항</p>
+                        </div>
+                        <div class="menu-box1">
+                            <div class="menu-box_2"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- 맨 밑에 있는 메뉴들 -->
+        </div>
+        <div class="body-c">
+            <div class="body-but-box">
+                <div class="body-b">
+                    <!-- 주요 지체정보 -->
+                    <div class="title">
+                        <div class="title-1-box"></div>
+                        <p class="title-1">주요 지체정보</p>
+                    </div>
+                    <!-- 주소 -->
+                    <div class="address">
+                        <div class="scroll">
+                            <div class="address-list">
+                                <div class="address-box">
+                                    <div class="address-list-box">
+                                        <div class="state">
+                                            <div class="state-box">
+                                                <p class="state-name">지체</p>
+                                            </div>
+                                        </div>
+                                        <p class="address-name">안덕원로</p>
+                                    </div>
+                                    <div class="address-list-box2">
+                                        <p class="road-address-1">[기린로4가~ 전북광장]</p>
+                                        <p class="road-address">10km/h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <div class="address-box">
+                                    <div class="address-list-box">
+                                        <div class="state">
+                                            <div class="state-box-1">
+                                                <p class="state-name-1">정체</p>
+                                            </div>
+                                        </div>
+                                        <p class="address-name">안덕원로</p>
+                                    </div>
+                                    <div class="address-list-box2">
+                                        <p class="road-address-1">[기린로4가~ 전북광장]</p>
+                                        <p class="road-address">10km/h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <div class="address-box">
+                                    <div class="address-list-box">
+                                        <div class="state">
+                                            <div class="state-box">
+                                                <p class="state-name">지체</p>
+                                            </div>
+                                        </div>
+                                        <p class="address-name">안덕원로</p>
+                                    </div>
+                                    <div class="address-list-box2">
+                                        <p class="road-address-1">[기린로4가~ 전북광장]</p>
+                                        <p class="road-address">10km/h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <div class="address-box">
+                                    <div class="address-list-box">
+                                        <div class="state">
+                                            <div class="state-box">
+                                                <p class="state-name">지체</p>
+                                            </div>
+                                        </div>
+                                        <p class="address-name">안덕원로</p>
+                                    </div>
+                                    <div class="address-list-box2">
+                                        <p class="road-address-1">[기린로4가~ 전북광장]</p>
+                                        <p class="road-address">10km/h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <div class="address-box">
+                                    <div class="address-list-box">
+                                        <div class="state">
+                                            <div class="state-box">
+                                                <p class="state-name">지체</p>
+                                            </div>
+                                        </div>
+                                        <p class="address-name">안덕원로</p>
+                                    </div>
+                                    <div class="address-list-box2">
+                                        <p class="road-address-1">[기린로4가~ 전북광장]</p>
+                                        <p class="road-address">10km/h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <div class="address-box">
+                                    <div class="address-list-box">
+                                        <div class="state">
+                                            <div class="state-box">
+                                                <p class="state-name">지체</p>
+                                            </div>
+                                        </div>
+                                        <p class="address-name">안덕원로</p>
+                                    </div>
+                                    <div class="address-list-box2">
+                                        <p class="road-address-1">[기린로4가~ 전북광장]</p>
+                                        <p class="road-address">10km/h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <div class="address-box">
+                                    <div class="address-list-box">
+                                        <div class="state">
+                                            <div class="state-box">
+                                                <p class="state-name">지체</p>
+                                            </div>
+                                        </div>
+                                        <p class="address-name">안덕원로</p>
+                                    </div>
+                                    <div class="address-list-box2">
+                                        <p class="road-address-1">[기린로4가~ 전북광장]</p>
+                                        <p class="road-address">10km/h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <div class="address-box">
+                                    <div class="address-list-box">
+                                        <div class="state">
+                                            <div class="state-box">
+                                                <p class="state-name">지체</p>
+                                            </div>
+                                        </div>
+                                        <p class="address-name">안덕원로</p>
+                                    </div>
+                                    <div class="address-list-box2">
+                                        <p class="road-address-1">[기린로4가~ 전북광장]</p>
+                                        <p class="road-address">10km/h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <div class="address-box">
+                                    <div class="address-list-box">
+                                        <div class="state">
+                                            <div class="state-box">
+                                                <p class="state-name">지체</p>
+                                            </div>
+                                        </div>
+                                        <p class="address-name">안덕원로</p>
+                                    </div>
+                                    <div class="address-list-box2">
+                                        <p class="road-address-1">[기린로4가~ 전북광장]</p>
+                                        <p class="road-address">10km/h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <div class="address-box">
+                                    <div class="address-list-box">
+                                        <div class="state">
+                                            <div class="state-box">
+                                                <p class="state-name">지체</p>
+                                            </div>
+                                        </div>
+                                        <p class="address-name">안덕원로</p>
+                                    </div>
+                                    <div class="address-list-box2">
+                                        <p class="road-address-1">[기린로4가~ 전북광장]</p>
+                                        <p class="road-address">10km/h</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address-list">
+                                <div class="address-box">
+                                    <div class="address-list-box">
+                                        <div class="state">
+                                            <div class="state-box">
+                                                <p class="state-name">지체</p>
+                                            </div>
+                                        </div>
+                                        <p class="address-name">안덕원로</p>
+                                    </div>
+                                    <div class="address-list-box2">
+                                        <p class="road-address-1">[기린로4가~ 전북광장]</p>
+                                        <p class="road-address">10km/h</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 공지사항 -->
+                    <div class="announcement">
+                        <div class="scroll">
+                        <div class="announcemen-box"></div>
+                        <p class="title-2">공지사항</p>
+                    </div>
+                    <!-- 공지사항 내용 -->
+                    <div class="Contents">
+                        <div class="scroll">
+                        <a href="/iksan/announcement-1.html">
+                            <div class="Contents-box">
+                                <div class="Contents-box-1">
+                                    <p class="Contents-text">익산시 교통정보센터에서 알립니다. </p>
+                                    <p class="Contents-date">22-03-12</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/iksan/announcement-1.html">
+                            <div class="Contents-box">
+                                <div class="Contents-box-1">
+                                    <p class="Contents-text">익산시 교통정보센터에서 알립니다. </p>
+                                    <p class="Contents-date">22-03-12</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/iksan/announcement-1.html">
+                            <div class="Contents-box">
+                                <div class="Contents-box-1">
+                                    <p class="Contents-text">익산시 교통정보센터에서 알립니다. </p>
+                                    <p class="Contents-date">22-03-12</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/iksan/announcement-1.html">
+                            <div class="Contents-box">
+                                <div class="Contents-box-1">
+                                    <p class="Contents-text">익산시 교통정보센터에서 알립니다. </p>
+                                    <p class="Contents-date">22-03-12</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/iksan/announcement-1.html">
+                            <div class="Contents-box">
+                                <div class="Contents-box-1">
+                                    <p class="Contents-text">익산시 교통정보센터에서 알립니다. </p>
+                                    <p class="Contents-date">22-03-12</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/iksan/announcement-1.html">
+                            <div class="Contents-box">
+                                <div class="Contents-box-1">
+                                    <p class="Contents-text">익산시 교통정보센터에서 알립니다. </p>
+                                    <p class="Contents-date">22-03-12</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/iksan/announcement-1.html">
+                            <div class="Contents-box">
+                                <div class="Contents-box-1">
+                                    <p class="Contents-text">익산시 교통정보센터에서 알립니다. </p>
+                                    <p class="Contents-date">22-03-12</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/iksan/announcement-1.html">
+                            <div class="Contents-box">
+                                <div class="Contents-box-1">
+                                    <p class="Contents-text">익산시 교통정보센터에서 알립니다. </p>
+                                    <p class="Contents-date">22-03-12</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                    
+                <div class="but-box">
+                    <button id="1" class="slide-button" onclick="move()">
+                        <img src="/iksan/pic/arrow.svg" class="slide-but-img">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

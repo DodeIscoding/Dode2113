@@ -1,0 +1,871 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;900&display=swap');
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100vh;
+}
+
+.body-a {
+    position: fixed ;
+    display: flex;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 70px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.body-b {
+    height: 100vh;
+    background: #eff1fa;
+    padding: 0px;
+    width: 400px;
+    flex-shrink: 0;
+    box-shadow: 1px 1px 10px 5px #cdcdc5
+}
+
+.body-c {
+    top: 70px;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+}
+
+.background-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.bottom {
+    bottom: -100px;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: gray;
+}
+
+
+/* 맵 위에 있는 상태창 */
+
+.map-state {
+    box-shadow: 1px 1px 10px 5px #cdcdc5;
+    margin-left: 725px;
+    margin-top: 550px;
+    height: 155px;
+    width: 310px;
+    background: #fff;
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+
+/* 상태창 날짜 */
+
+.map-date {
+    display: flex;
+}
+
+.map-date-text {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.off {
+    margin-left: 135px;
+    background: #fff;
+    border: #fff;
+}
+
+
+/* 버튼 누르면 상태창이 사라졌다 나타남 */
+
+.on-display {
+    display: none;
+}
+
+.on {
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 5px #cdcdc5;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 1055px;
+    background: #fff;
+    border: #fff;
+}
+
+
+/* 버튼 누르면 상태창이 사라졌다 나타남 */
+
+.off-1 {
+    display: none;
+}
+
+
+/* 상태창에 있는 상태들 */
+
+.info-color {
+    display: flex;
+}
+
+.good {
+    margin-right: 1px;
+    color: #fff;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid green;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background: green;
+}
+
+.wait {
+    margin-right: 1px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid gold;
+    background: gold;
+}
+
+.stop {
+    margin-right: 1px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid crimson;
+    background: crimson;
+}
+
+.no {
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 15px;
+    border: 1px solid gray;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: gray;
+}
+
+
+/* 상태에 있는 텍스트 */
+
+li::marker {
+    color: #a5a5a8;
+}
+
+
+/* 맵 위에 있는 메뉴 */
+
+.map-menu {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: 200px;
+    margin-left: 970px;
+    height: 300px;
+    width: 80px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #d0d0cd;
+}
+
+.map-menu-link {
+    text-decoration: none;
+    color: black;
+    cursor: auto;
+}
+
+
+/* 메뉴에 있는 선택창 */
+
+
+/* 소통정보 */
+
+.map-Communication {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    border-bottom: 1px solid #d3d7dc;
+    padding: 0px 10px 0px 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.map-Communication-img {
+    width: 30px;
+    padding: 13.5px;
+    padding-bottom: 0px;
+}
+
+.map-Communication-text {
+    font-size: 16px;
+    margin: 0px;
+    cursor: Default;
+}
+
+.map-Communication:hover {
+    background: #3e91b5;
+}
+
+.map-Communication:hover .map-Communication-img {
+    filter: invert(98%) sepia(98%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(106%);
+}
+
+.map-Communication:hover .map-Communication-text {
+    filter: invert(98%) sepia(98%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(106%);
+}
+
+
+/* CCTV */
+
+.map-cctv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    border-bottom: 1px solid #d3d7dc;
+    padding: 0px 10px 0px 10px;
+}
+
+.map-cctv-img {
+    width: 35px;
+    padding: 10px 13.5px 0px 13.5px;
+    padding-bottom: 0px;
+}
+
+.map-cctv-text {
+    font-size: 16px;
+    padding: 0px 10px 0px 10px;
+    margin: 0px;
+    cursor: Default;
+}
+
+.map-cctv:hover {
+    background: #3e91b5;
+}
+
+.map-cctv:hover .map-cctv-img {
+    filter: invert(98%) sepia(98%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(106%);
+}
+
+.map-cctv:hover .map-cctv-text {
+    filter: invert(98%) sepia(98%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(106%);
+}
+
+
+/* 주차정보 */
+
+.map-parking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    border-bottom: 1px solid #d3d7dc;
+    padding: 0px 10px 0px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.map-parking-img {
+    width: 33px;
+    padding: 10px 13.5px 0px 13.5px;
+    padding-bottom: 0px;
+}
+
+.map-parking-text {
+    width: 64px;
+    font-size: 16px;
+    margin: 0px;
+    cursor: Default;
+}
+
+.map-parking:hover {
+    background: #3e91b5;
+}
+
+.map-parking:hover .map-parking-img {
+    filter: invert(98%) sepia(98%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(106%);
+}
+
+.map-parking:hover .map-parking-text {
+    filter: invert(98%) sepia(98%) saturate(0%) hue-rotate(355deg) brightness(102%) contrast(106%);
+}
+
+
+/* 슬라이드 */
+
+.slide-button {
+    padding: 0px;
+    border: 0px;
+    background: #eff1fa;
+    height: 125px;
+    width: 40px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 1px 5px 5px #cdcdc5;
+}
+
+.slide-but-img {
+    transition-duration: 1.5s;
+    transform: scaleX(-1);
+}
+
+.slide-button:hover .slide-but-img {
+    filter: invert(92%) sepia(7%) saturate(159%) hue-rotate(201deg) brightness(80%) contrast(91%);
+}
+
+.but-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.body-but-box {
+    display: flex;
+}
+
+
+/* 들어가는 슬라이드 애니메이션 */
+
+.go {
+    transform: translate(-91%);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+
+/* .go-1{   
+        transform: translate(-1000%);
+        transition-property: all;
+        transition-duration: 0.28s;
+        transition-timing-function: linear;
+     } */
+
+.go-img {
+    transition-duration: 0.5s;
+    transform: scaleX(1);
+}
+
+
+/* 다시 나오는 슬라이드 애니메이션 */
+
+.go-2 {
+    transform: translate(0%);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+
+/* .go-3{
+        transform: translate(0);
+        transition-property: all;
+        transition-duration: 0.29s;
+        transition-timing-function: linear;
+    }
+    */
+
+.go-img-1 {
+    transition-duration: 0.5s;
+    transform: scaleX(-1);
+}
+
+
+/* 익산 로고 */
+
+
+/* 사진 */
+
+.dog {
+    height: 100px;
+    text-decoration: none;
+    color: black;
+    margin: 0px
+}
+
+.img-text-bundle {
+    display: flex;
+    width: 255px;
+    height: 70px;
+}
+
+.iksan-img {
+    height: 70px;
+    width: 255px;
+    margin-right: 20%;
+    margin-left: 1.3%;
+}
+
+.img-text-box {
+    width: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* 글씨 */
+
+.img-text-eh {
+    margin-bottom: 0;
+    font-size: 11px;
+    margin-top: 0;
+    width: 200px;
+}
+
+.img-text {
+    width: 200px;
+    height: 35px;
+    margin-top: 0px;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+
+/* 언어 선택창 */
+
+.Language-list-box {
+    display: flex;
+    background: #eff1fa;
+    width: 270px;
+    height: 30px;
+    margin-left: 12px;
+    justify-content: space-around;
+    border-radius: 5px / 5px;
+    font-size: 12px;
+    align-items: baseline;
+}
+
+.koreaen {
+    transition-duration: 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.English {
+    transition-duration: 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.China {
+    transition-duration: 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Japan {
+    transition-duration: 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Language-off {
+    color: #b9b9bf;
+}
+
+.Language-on {
+    color: black;
+}
+
+.Language {
+    margin-top: 7px;
+}
+
+
+/* 언어들 마우스 갖다대면 색 */
+
+.koreaen:hover {
+    color: black;
+}
+
+.English:hover {
+    color: black;
+}
+
+.China:hover {
+    color: black;
+}
+
+.Japan:hover {
+    color: black;
+}
+
+
+/* 메뉴창 */
+
+.menu {
+    min-width: 600px;
+    width: 33%;
+    height: 70px;
+}
+
+.menu-list {
+    min-width: 600px;
+    width: 25%;
+    display: flex;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 22px;
+    justify-content: space-between;
+}
+
+.img-1 {
+    display: flex;
+}
+
+.Traffic_Light {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.menu-box1 {
+    margin-left: 23px;
+}
+
+.menu-box_2 {
+    background: #fff;
+    margin-left: 0px;
+    height: 5px;
+}
+
+.menu-link-1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.menu-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    filter: invert(27%) sepia(63%) saturate(2235%) hue-rotate(187deg) brightness(90%) contrast(103%);
+}
+
+.menu-link:hover .menu-box_2 {
+    margin-bottom: -5px;
+    filter: invert(64%) sepia(23%) saturate(862%) hue-rotate(181deg) brightness(93%) contrast(94%);
+}
+
+
+/* 회사 맨 밑 메뉴들 */
+
+.bottom-menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+
+/* 모니터링과 민원신고 박스 */
+
+.mon_dec_box {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 60%;
+    width: 140px;
+}
+
+
+/* 교통불편민원신고 */
+
+.monitoring {
+    margin-bottom: 10px;
+}
+
+
+/* 다른 사이트로 이동 */
+
+.bottom-menu-1 {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.bottom-menu-1:hover {
+    font-size: 15px;
+    /* color: #3e91b5; */
+    color: black;
+}
+
+
+/* 관련사이트 매뉴바 */
+
+.Related-sites {
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 35px;
+}
+
+.company-list:focus {
+    color: #fff;
+}
+
+select {
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select {
+    width: inherit;
+    height: inherit;
+    background: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0 74px 0 10px;
+    position: relative;
+    color: gray;
+    border-radius: 5px / 5px;
+}
+
+.select option {
+    color: gray;
+}
+
+
+/* 회사 정보들 */
+
+.company-information {
+    font-size: 12px;
+    /* color: #a5a5a8; */
+    color: #fff;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.company-information-list {
+    width: 380px;
+}
+
+
+/* 주요 지체정보 */
+
+.title {
+    display: flex;
+    width: 350px;
+    height: 50px;
+    color: #180e5e;
+    margin-top: 35px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.title-1 {
+    margin: 0%;
+    font-weight: 500;
+    width: 350px;
+    height: 50px;
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.title-1-box {
+    border-radius: 15px / 15px;
+    margin-top: 15px;
+    height: 20px;
+    width: 5px;
+    background: #0066b3;
+}
+
+
+/* 스크롤 전체 */
+
+.address {
+    border-width: 1px 0px 0px 0px;
+    width: 348px;
+    border-style: solid;
+    height: 300px;
+    margin-left: 25px;
+    margin-right: 25px
+}
+
+
+/* 스크롤 */
+
+.scroll {
+    overflow: scroll;
+    width: 350px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    height: 10px;
+}
+
+
+/* 주소 내용들 */
+
+.address-list {
+    height: 60px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #d3d7dc;
+}
+
+
+/* 상태 */
+
+.state {
+    margin-top: 3px;
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.state-box {
+    background: #ffcb08;
+    color: white;
+    margin: 0px;
+    width: 60px;
+    height: 20px;
+    border-radius: 15px / 15px;
+    ;
+}
+
+.state-box-1 {
+    background: #ff3829;
+    color: white;
+    margin: 0px;
+    width: 60px;
+    height: 20px;
+    border-radius: 15px / 15px;
+    ;
+}
+
+.state-name {
+    margin-top: 0;
+    padding: 3px;
+}
+
+.state-name-1 {
+    margin-top: 0;
+    padding: 3px;
+}
+
+
+/* 주소 이름들 */
+
+.address-list-box {
+    display: flex;
+    height: 30px;
+}
+
+.address-list-box2 {
+    display: flex;
+    height: 30px;
+}
+
+.address-name {
+    font-weight: 500;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.road-address {
+    margin: 0px;
+    margin-left: 3px;
+    color: #f26522;
+}
+
+.road-address-1 {
+    font-size: 14px;
+    margin: 0px;
+}
+
+.address-box {
+    margin-top: 15px;
+}
+
+
+/* 공지사항  */
+
+.announcement {
+    display: flex;
+    width: 350px;
+    height: 50px;
+    color: #180e5e;
+    margin-top: 35px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.announcemen-box {
+    border-radius: 15px / 15px;
+    margin-top: 15px;
+    height: 20px;
+    width: 5px;
+    background: #0066b3;
+}
+
+.title-2 {
+    font-weight: 500;
+    margin: 0%;
+    width: 350px;
+    height: 50px;
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.Contents {
+    display: flex;
+    flex-direction: column;
+    height: 325px;
+    width: 350px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+}
+
+.Contents-box-1 {
+    display: flex;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    height: 40px;
+    border-color: #d3d7dc;
+}
+
+.Contents-text {
+    margin: 0px;
+    margin-top: 7px;
+}
+
+.Contents-date {
+    font-size: 13px;
+    margin: 0px;
+    margin-left: 50px;
+    margin-top: 9px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

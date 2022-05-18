@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="slide.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>익산시교통정보센터</title>
+    <link rel="stylesheet" href="/iksan/css/parking.css">
+    <link rel="stylesheet" href="/iksan/css/focus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div class="bottom">
+            <div class="bottom-menu">
+                <!-- 위치랑 전화번호 -->
+                <div class="company-information">
+                    <div class="company-information-list">
+                        <div class="company">전라북도 익산 무왕로2길 414</div>
+                        <div class="company">대표전화 (063)859-4541</div>
+                        <div class="company">Copyright(c) 2022 IKSANCITY All rights reserved</div>
+                    </div>
+                </div>
+                <!-- 모니터링단홈페이지 -->
+                <div class="mon_dec_box">
+                    <div class="monitoring">
+                        <div class="monitoring-1">
+                            <a href="/iksan/main.html" class="bottom-menu-1">모니터링단홈페이지</a>
+                        </div>
+                    </div>
+                    <!-- 교통불편민원신고 -->
+                    <div class="declaration">
+                        <a href="http://www.molit.go.kr/irocm/USR/WPGE0201/m_15604/DTL.jsp" target='_blank'
+                            class="bottom-menu-1">교통불편민원신고</a>
+                    </div>
+                </div>
+                <!-- 관련사이트 목록 -->
+                <div class="Related-sites">
+                    <select name="company-list" id="select" class="select" onchange="window.open(value,sel_val())"
+                        style="padding-right: 20px;">
+                        <option id="1" value="none" disabled selected>관련사이트</option>
+                        <option id="2" value="https://www.iksan.go.kr/index.iksan?menuCd=DOM_000002017000000000">익산시청
+                        </option>
+                        <option id="3" value="https://www.police.go.kr/index.do">경찰청</option>
+                        <option id="4" value="https://www.tago.go.kr/">TAGO</option>
+                        <option id="5" value="http://www.molit.go.kr/portal.do">국토교통부</option>
+                        <option id="6" value="https://www.koroad.or.kr/">도로교통공단</option>
+                        <option id="7" value="https://www.ex.co.kr/">한국도로공사</option>
+                        <option id="8" value="https://www.tbn.or.kr/">TBN전북교통방송</option>
+                        <option id="9" value="https://www.its.go.kr/">국가교통정보</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <img class="background-img" src="/iksan/pic/test.png">
+        <div class="body-a">
+            <!-- 홈페이지 로그 -->
+            <div class="iksan-img">
+                <a href="/iksan/main.html" class="dog">
+                    <div class="img-text-bundle">
+                        <img clsaa="iksan" src="pic/iksan.png" bordar="0" width="60" height="50" alt=""
+                            style="margin-top: 12px;">
+                        <div class="img-text-box">
+                            <p class="img-text">익산시교통정보센터</p>
+                            <p class="img-text-eh">IKSAN City Traffic Imformation Center</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- 메뉴창 -->
+            <div class="menu">
+                <div class="menu-list">
+                    <!-- 소통정보창 -->
+                    <a href="/iksan/Communication.html" class="menu-link">
+                        <div class="img-1">
+                            <img class="Traffic_Light" src="pic/traffic-light-svgrepo-com.svg"
+                                style="width: 25px; height: 25px; margin-left: 25px;">
+                            <p class="menu-link-text">소통정보</p>
+                        </div>
+                        <div class="menu-box1">
+                            <div class="menu-box_2"></div>
+                        </div>
+                    </a>
+                    <!-- CCTV -->
+                    <a href="/iksan/CCTV.html" class="menu-link">
+                        <div class="img-1">
+                            <img class="Traffic_Light" src="pic/cctv-svgrepo-com.svg"
+                                style="width: 25px; height: 25px; margin-left: 25px;">
+                            <p class="menu-link-text">CCTV</p>
+                        </div>
+                        <div class="menu-box1">
+                            <div class="menu-box_2"></div>
+                        </div>
+                    </a>
+                    <!-- 주차장 정보 -->
+                    <a href="/iksan/parking.html" class="menu-link-1">
+                        <div class="img-1">
+                            <img class="Traffic_Light" src="pic/parking-svgrepo-com.svg"
+                                style="width: 25px; height: 25px; margin-left: 25px;">
+                            <p class="menu-link-text">주차장 정보</p>
+                        </div>
+                        <div class="menu-box1">
+                            <div class="menu-box_3"></div>
+                        </div>
+                    </a>
+                    <!-- 공지사항 -->
+                    <a href="/iksan/announcement-1.html" class="menu-link">
+                        <div class="img-1">
+                            <img class="Traffic_Light" src="pic/message-svgrepo-com.svg"
+                                style="width: 25px; height: 25px; margin-left: 25px;">
+                            <p class="menu-link-text">공지사항</p>
+                        </div>
+                        <div class="menu-box1">
+                            <div class="menu-box_2"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="body-c">
+            <div class="body-but-box">
+                <div class="body-b">
+                    <!-- CCTV -->
+                    <div class="main">
+                        <div class="main-box">
+                            <div class="title-1-box"></div>
+                            <p class="communication-info">주차장 정보</p>
+                        </div>
+                    </div>
+                    <!-- 검색창 코드들 -->
+                    <div class="search-box">
+                        <!-- 검색 선택창 -->
+                        <div class="search-main">
+                            <div class="search-menu">
+                                <button id="simple-search" onclick="search_on1()" class="simple-search">간편검색</button>
+                                <button id="area-search" onclick="search_on2()" class="area-search">지역검색</button>
+                            </div>
+                        </div>
+                        <div class="search-box-1"></div>
+                        <!-- 검색창 -->
+                        <div class="search">
+                            <div class="search-1">
+                                <p class="search-text">도로명 <input class="search_input" type="text"></p>
+                                <button type="button" class="search_button">검색</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 검색 결과들 -->
+                    <div class="search-result">
+                        <div class="street">
+                            <div class="scroll">
+                                <div class="address">
+                                    <p class="address-address">함열파출소 옆<br>공영주차장</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">함라면 함열리 432</p>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p class="address-address">중앙시장</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">익산시 창인동 1가 104-14</p>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p class="address-address">시동시장</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">익산시 창인동 1가 112</p>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p class="address-address">북부시장</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">익산시 남중동 12-1</p>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p class="address-address">매일시장</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">익산시 창인동 1가 131-18</p>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p class="address-address">황등시장</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">익산시 황등면 황드리 588-2</p>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p class="address-address">함열시장</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">익산시 함열읍 와리 545-262</p>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p class="address-address">남부시장</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">익산시 인화동 1가 119</p>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p class="address-address">금마시장</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">금마 4길 7</p>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p class="address-address">금리면 동고도리</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">금마면 동고도리 683</p>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p class="address-address">함열읍 남당리</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">함열읍 남당리 740-16</p>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p class="address-address">중앙시장</p>
+                                    <div class="address-list">
+                                        <p class="address-addres-1">함라면 함열리 432</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="but-box">
+                    <button id="1" class="slide-button" onclick="move()">
+                        <img src="/iksan/pic/arrow.svg" class="slide-but-img">
+                    </button>
+                </div>
+            </div>
+            <div id="mini-state" class="mini-state">
+                <div class="mini-box" style="display: flex;">
+                    <div class="mini-wait">
+                        <p class="mini-wait-text">원활</p>
+                    </div>
+                    <div class="mini-road">
+                        <p class="mini-road-text">인덕원로[기린로4가~전북광장]</p>
+                    </div>
+                    <div class="mini-km">
+                        <p class="mini-km-text">10Km/h</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 주차장 버튼 클릭시 나오는 지도 -->
+            <div id="test-box" class="test-box test-display">
+                <div class="test-box-title">
+                    <div>
+                        <p class="test-box-title1">북부시장</p>
+                    </div>
+                    <button class="test-box-but" onclick="testboxoff_parkingon()">
+                        <img class="test-box-but-img" src="/iksan/pic/x.png">
+                    </button>
+                </div>
+                <div class="test-box-text-box">
+                    <div class="parking-number">
+                        <div class="parking-divbox">
+                            <p class="parking-num-text">주차구획수</p>
+                            <div class="parking-border"></div>
+                            <p class="parking-num-number">131</p>
+                        </div>
+                    </div>
+                    <div class="parking-date">
+                        <div class="parking-divbox">
+                            <p class="parking-date-text">운영요일</p>
+                            <div class="parking-border"></div>
+                            <p class="parking-date-number">평일+토요일+공휴일</p>
+                        </div>
+                    </div>
+                    <div class="parking-clock">
+                        <div class="parking-divbox">
+                            <p class="parking-clock-text">운영시간</p>
+                            <div class="parking-border"></div>
+                            <p class="parking-clock-number">12:00 ~ 24:00</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 지도 위에 있는 CCTV 버튼들 -->
+            <button class="parking-box" onclick="parkingon1()" id="parkingon1"
+                style="margin-left: 600px; margin-top: 430px;">
+                <div class="parking-box-1">
+                    <img class="parking-box-img" id="parking0-1" src="/iksan/pic/map-parking.png">
+                </div>
+            </button>
+            <button class="parking-box" onclick="parkingon2()" id="parkingon2"
+                style="margin-left: 525px;margin-top: 365px;">
+                <div class="parking-box-1">
+                    <img class="parking-box-img" id="parking0-2" src="/iksan/pic/map-parking.png">
+                </div>
+            </button>
+            <button class="parking-box" onclick="parkingon3()" id="parkingon3"
+                style="margin-left:1100px; margin-top: 325px;">
+                <div class="parking-box-1">
+                    <img class="parking-box-img" id="parking0-3" src="/iksan/pic/map-parking.png">
+                </div>
+            </button>
+            <button class="parking-box" onclick="parkingon4()" id="parkingon4"
+                style="margin-left: 860px;margin-top: 415px;">
+                <div class="parking-box-1">
+                    <img class="parking-box-img" id="parking0-4" src="/iksan/pic/map-parking.png">
+                </div>
+            </button>
+            <button class="parking-box" onclick="parkingon5()" id="parkingon5"
+                style="margin-top: 482px; margin-left: 1280px;">
+                <div class="parking-box-1">
+                    <img class="parking-box-img" id="parking0-5" src="/iksan/pic/map-parking.png">
+                </div>
+            </button>
+            <button class="parking-box" onclick="parkingon6()" id="parkingon6"
+                style="margin-top: 455px;margin-left: 1400px;">
+                <div class="parking-box-1">
+                    <img class="parking-box-img" id="parking0-6" src="/iksan/pic/map-parking.png">
+                </div>
+            </button>
+
+            <!-- 지도 위에 있는 상태창 -->
+            <button class="on on-display" onclick="on()" id="on">↑</button>
+            <div class="map-state">
+                <div class="map-date">
+                    <p class="map-date-text">기준</p>
+                    <p class="map-date-text-1">2020.03.10 01:06</p>
+                    <button class="off" onclick="off()" id="off">x</button>
+                </div>
+                <div class="info-color">
+                    <div class="good">원활</div>
+                    <div class="wait">지체</div>
+                    <div class="stop">정체</div>
+                    <div class="no">정보없음</div>
+                </div>
+                <div class="map-state-text">
+                    <ul>
+                        <li class="map-state-text-1">등급별 툴팁으로 상세정보 확인이 가능합니다.</p>
+                        <li class="map-state-text-2">현장의 실제속도와는 차이가 있을 수 있습니다.</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script>
+    $(document).ready(function () {
+        var tmp = parseInt($("#mini-state").css('top'));
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            var obj_position = scrollTop + tmp + "px";
+            $("#mini-state").stop().animate({
+                "top": obj_position
+            }, 0.1);
+        }).scroll();
+    });
+</script> -->
+
+</html>
